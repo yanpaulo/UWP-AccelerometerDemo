@@ -3,6 +3,13 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:AccelerometerDemo"
+    xmlns:converters="using:AccelerometerDemo.Converters"
     RequestedTheme="Light">
+
+    <Application.Resources>
+        <converters:BoolToColorValueConverter x:Name="BoolToColorValueConverter"></converters:BoolToColorValueConverter>
+        <converters:MilisecondToTimespanValueConverter x:Name="MilisecValueConverter"></converters:MilisecondToTimespanValueConverter>
+        
+    </Application.Resources>
 
 </Application>
