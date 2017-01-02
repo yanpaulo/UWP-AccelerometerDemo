@@ -51,7 +51,7 @@ namespace AccelerometerDemo
 
         private void Timer_Tick(object sender, object e)
         {
-            var reading = _accel.GetCurrentReading();
+            var reading = _accel?.GetCurrentReading();
             if (reading != null)
             {
                 _viewModel.ReadAccel(reading);
